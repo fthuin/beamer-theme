@@ -1,0 +1,106 @@
+\documentclass{beamer}
+
+\usepackage{graphicx} % Gestion des images
+\usepackage{graphics} % Gestion de placement d'images
+\usepackage{hyperref} % Référence liée
+\usepackage[french]{babel} % Langue du document
+\usepackage[utf8]{inputenc} % Encodage du document
+\usepackage[T1]{fontenc} % Encodage de la police
+\usepackage[babel=true]{csquotes} % Utilisation d'enquote
+
+\newenvironment{wideitemize}{\itemize\addtolength{\itemsep}{10pt}}{\enditemize}
+
+\mode<presentation>
+	{
+	\usetheme{dark}
+	%\usetheme{Pittsburgh}
+	\setbeamercovered{transparent = 28}
+	}
+
+%\usecolortheme{Moo} 
+%\useinnertheme{Moo}
+%\useoutertheme{Moo}
+
+
+\logo{logo_epl.png}
+\title{Présentation EPL}
+\subtitle{Thème beamer}
+\author{Florian Thuin}
+\institute{Ecole Polytechnique de Louvain}
+\abrevinstitute{Ecole Polytechnique de Louvain}
+
+\begin{document}
+
+
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+
+\AtBeginSection[]
+{
+   \begin{frame}
+       \frametitle{Plan}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+
+\section{The story of this presentation}
+
+\begin{frame}
+	\frametitle{What is this ?}
+		\begin{itemize}
+ 			\item This presentation is based on a simple theme
+ 			\item This presentation shows how we can customize and make
+                \enquote{beamer} ours
+ 			\item Like the logo on the title slide
+ 			\item And the logo on the top right corner
+ 		\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{How tough is it to make a presentation ?}
+		\begin{wideitemize}
+			\item Not a lot
+			\item Simple commands with a concept in mind for
+			\pause
+			\item Colour
+			\pause
+			\item Font
+			\pause
+			\item Inner details
+			\pause
+			\item Outer details
+		\end{wideitemize}
+\end{frame}
+
+\section{Colors}
+
+\begin{frame}
+	\frametitle{EPL brings colours to life}
+		\begin{description}
+			\item [Blue] Notice the colour of description item title
+			\item [Still blue] It can be set globally
+			\item [\color{red} Red] \dots but can also be changed if required
+		\end{description}
+\end{frame}	
+
+\begin{frame}
+	\frametitle{You can personalize EPL. (S)he doesn't mind.}
+	
+		\begin{theorem}[It's a theorem]
+			You can change the way the boxes look and feel
+		\end{theorem}
+		
+		\begin{exampleblock}{Example}
+			Exemplify EPL.
+		\end{exampleblock}
+		
+		\begin{alertblock}{Alert}
+			Sometimes EPL gets carried away.
+		\end{alertblock}
+\end{frame}	
+
+
+\end{document}
